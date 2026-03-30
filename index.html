@@ -18,9 +18,22 @@
     <li><a href="d1_keiths_palsi_integration_1.html">Introduction to Integration</a></li>
     <li><a href="d1_keiths_palsi_integration_2.html">Integration and Applications</a></li>
     <li><a href="d1_keiths_palsi_midterm_01.html">Original Mock Midterm Exam</a></li>
-    <li><a href="d1_keiths_palsi_midterm_s1.html">Original Mock Midterm Exam Solutions</a></li>
+    <li><a href="#" onclick="checkPassword('d1_keiths_palsi_midterm_s1.html'); return false;">Original Mock Midterm Exam Solutions</a></li>
     <li><a href="d1_keiths_palsi_mock_01.html">Original Mock Exam</a></li>
-    <li><a href="d1_keiths_palsi_mock_s1.html">Original Mock Exam Solutions</a></li>
+    <li><a href="#" onclick="checkPassword('d1_keiths_palsi_mock_s1.html'); return false;">Original Mock Exam Solutions</a></li>
   </ul>
+
+  <script>
+    function checkPassword(filename) {
+      const enteredPassword = prompt("Enter password to access Original Mock Exam Solutions:");
+      const correctPassword = "6605";   // ←←← CHANGE THIS TO YOUR DESIRED PASSWORD
+
+      if (enteredPassword === correctPassword) {
+        window.open(filename, "_blank");   // opens in a new tab
+      } else if (enteredPassword !== null) {   // user did not click Cancel
+        alert("Incorrect password! Access denied.");
+      }
+    }
+  </script>
 </body>
 </html>
