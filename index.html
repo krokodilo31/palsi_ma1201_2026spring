@@ -26,11 +26,11 @@
   <script>
     function checkPassword(filename) {
       const enteredPassword = prompt("Enter password to access Original Mock Exam Solutions:");
-      const correctPassword = "6605";   // ←←← CHANGE THIS TO YOUR DESIRED PASSWORD
+      const correctPassword = "6605";
 
       if (enteredPassword === correctPassword) {
-        window.open(filename, "_blank");   // opens in a new tab
-      } else if (enteredPassword !== null) {   // user did not click Cancel
+        window.open(filename, "_blank");
+      } else if (enteredPassword !== null) {
         alert("Incorrect password! Access denied.");
       }
     }
